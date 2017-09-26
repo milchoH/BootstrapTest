@@ -1,0 +1,29 @@
+CREATE TABLE producttypes(id INT(6),
+						type VARCHAR(30)
+						priceFor1 DOUBLE,
+						priceFor5 DOUBLE,
+						priceFor10 DOUBLE,
+						priceFor20 DOUBLE)
+
+CREATE TABLE products(id INT(6) NOT NULL AUTO_INCREMENT,
+					typeID INT(6),
+					productName VARCHAR(45),
+					image BLOB)
+
+INSERT INTO producttypes (id, type, priceFor1, priceFor5, priceFor10, priceFor20) VALUES (1 ,'cardboardCards', 1, 5, 9, 18);
+
+INSERT INTO producttypes (id, type, priceFor1, priceFor5, priceFor10, priceFor20) VALUES (2 ,'marbleCards', 1.5, 7.5, 13.5, 27);
+
+INSERT INTO producttypes (id, type, priceFor1, priceFor5, priceFor10, priceFor20) VALUES (3 ,'pearlCards', 2, 10, 18, 36);
+
+INSERT INTO producttypes (id, type, priceFor1, priceFor5, priceFor10, priceFor20) VALUES (4 ,'tags', 0.5, 2.5, 4.5, 9);
+
+INSERT INTO producttypes (id, type, priceFor1, priceFor5, priceFor10, priceFor20) VALUES (5 ,'moneyEnvelope', 1, 5, 9, 18);
+
+INSERT INTO producttypes (id, type, priceFor1, priceFor5, priceFor10, priceFor20) VALUES (6 ,'marbleEnvelope', 1.5, 7.5, 13.5, 27);
+
+INSERT INTO producttypes (id, type, priceFor1, priceFor5, priceFor10, priceFor20) VALUES (7 ,'pearlEnvelope', 2, 10, 18, 36);
+
+INSERT INTO producttypes (id, type, priceFor1, priceFor5, priceFor10, priceFor20) VALUES (8 ,'monoDecorations', 0.1, 0.5, 0.9, 1.8);
+
+INSERT INTO producttypes (id, type, priceFor1, priceFor5, priceFor10, priceFor20) VALUES (9 ,'multiDecorations', 0.15, 0.75, 1.35, 2.7);
