@@ -3149,6 +3149,7 @@ tbody.collapse.show {
 }
 
 .nav {
+
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -5287,7 +5288,7 @@ a.bg-light:focus, a.bg-light:hover {
 }
 
 .bg-dark {
-  background-color: #343a40 !important;
+  background-color: #555555 !important;
 }
 
 a.bg-dark:focus, a.bg-dark:hover {
